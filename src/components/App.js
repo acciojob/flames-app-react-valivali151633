@@ -48,6 +48,7 @@ const App = ()=>{
         <div id = "main">
             <input
                value = {input1}
+               name="name1"
                data-testid="input1"
                type="text"
                placeholder="Entet Name"
@@ -55,6 +56,7 @@ const App = ()=>{
             />
             <input
                value = {input2}
+               name="name2"
                data-testid="input2"
                type="text"
                placeholder="Entet Name"
@@ -71,7 +73,7 @@ const App = ()=>{
                 onClick={clear}
             >Clear
             </button>
-            {relation && <h3 data-testId="answer">{relation}</h3>}
+             <h3 data-testId="answer">{relation}</h3>}
         </div>
     )
 }
